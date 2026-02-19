@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #4caf50, #66bb6a);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 { font-size: 2.5em; }
+header p { margin-top: 10px; font-size: 1.2em; }
+
+.container { max-width: 1000px; margin: 40px auto; padding: 20px; }
+
+.center-box {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+form input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+form button {
+  width: 95%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover { background-color: #43a047; }
+
+.hidden { display: none; }
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.vaccine-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.vaccine-card.completed { background-color: #d4edda; }
+
+.vaccine-card h3 { margin-bottom: 8px; color: #4caf50; }
+
+.vaccine-card p { font-size: 0.9em; margin-bottom: 5px; }
+
+.vaccine-card button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.vaccine-card button:disabled { background-color: gray; cursor: not-allowed; }
+
+.progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50;
+  border-radius: 12px;
+  transition: width 0.5s ease-in-out;
+}
+
+.btn-group { margin-top: 15px; }
+
+.btn-group button {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-group button:hover { background-color: #43a047; }
+
+footer { text-align: center; padding: 20px; background-color: #dce4ea; color: #555; }
+
+@media(max-width:600px){
+  .vaccine-card { width: 90%; }
+  form input, form button { width: 100%; }
+}
