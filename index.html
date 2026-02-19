@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby Vaccination Reminder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Baby Vaccination Reminder</h1>
+  <p>Track your baby's immunizations from birth to 12 years</p>
+</header>
+
+<main class="container">
+
+  <!-- Page 1: Baby Details Form -->
+  <div id="formPage" class="center-box">
+    <h2>Enter Baby Details</h2>
+    <form id="babyForm">
+      <input type="text" id="babyName" placeholder="Baby Name" required>
+      <input type="date" id="dob" required>
+      <button type="submit">Next</button>
+    </form>
+  </div>
+
+  <!-- Page 2: Vaccine Schedule -->
+  <div id="schedulePage" class="hidden center-box">
+    <h2>Vaccine Schedule for <span id="displayName"></span></h2>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div id="vaccineCards" class="cards-container"></div>
+    <div class="btn-group">
+      <button id="backBtn">Back</button>
+      <button id="resetBtn">Reset Progress</button>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Baby Vaccination Reminder | Developed by Kavi Shifa
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
